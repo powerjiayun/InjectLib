@@ -96,6 +96,13 @@ ElPass: https://elpass.app/macos/appcast-beta.xml
 
 laoliu，good morning. not good also fine, follow u.
 
+Surge盗版用户请支持正版。<br>
+我对开发者致敬说个早上好也被某些无脑用户过度解读是嘲讽开发者是吧？那我直接说操你妈是不是你全家骨灰都被我扬了？<br>
+Surge是非常好的一个产品，我发我的补丁 你支持你自己的正版，who care u?<br>
+有的人不要两头带节奏 在正版群对开发者那边截图破解版嘲笑还打着为开发者着想的幌子拱火 另一边下破解版在别的电脑上用 这种人你的米线很低我就不评价了 但是你的🐎肯定必死。<br>
+
+对开发者团队我无意冒犯，早上好。<br>
+
 Surge 更新地址: https://www.nssurge.com/mac/v5/appcast-signed-beta.xml <br>
 
 一切完美。感谢QQ 302***3398 用户无偿提供授权信息。<br>
