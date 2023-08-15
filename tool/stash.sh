@@ -7,14 +7,9 @@ if [ $option = 'y' ];then             #判断用户是否输入，如果未输�
   # sudo /usr/bin/killall -u root -9 com.nssurge.surge-mac.helper
   sudo /bin/rm /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist
   sudo /bin/rm /Library/PrivilegedHelperTools/com.nssurge.surge-mac.helper
-
-  sudo rm -rf ~/Library/Preferences/com.nssurge.surge-mac.plist
-  sudo rm -rf ~/Library/Application\ Support/com.nssurge.surge-mac
 else
   echo "非全新安装,跳过清除。"
 fi
-
-echo "感谢QQ 3026***398 用户无偿提供授权信息。"
 echo "大胆！检测到你在用盗版软件，这可能会危害你的设备！甚至被国家安全局和保密处就地正法，请三思！"
 
 helper='/Applications/Stash.app/Contents/Library/LaunchServices/ws.stash.app.mac.daemon.helper'

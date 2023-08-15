@@ -68,10 +68,11 @@
 | Parallels Desktop                              | [18.3.2](https://download.parallels.com/desktop/v18/18.3.2-53621/ParallelsDesktop-18.3.2-53621.dmg) |   ✅   |   ✅   | ❌   |                                           | 
 | Stash                                          | [2.3.0](https://mac-release-static.stash.ws/Stash-build-221.zip)                                    |   ❌   |   ✅   | ❌   | 无法设置全局代理 不知道哪里有问题 总体体验较差 不如surge          |
 | CleanMyMac X                                   | 4.14.1                                                                                              |   ✅   |   ✅   | ⏳   | 不要下大陆特供版                                  | 
+| Paste                                          | 4.0.5                                                                                               |   ✅   |   ✅   | ✅   |                                           | 
 | App Cleaner & Uninstaller                      | 8.2.2                                                                                               |   ✅   |   ✅   | ⏳   | ARM64懒得弄了                                 | 
 | Microsoft Office Word/PowerPoint/Excel/Outlook | 16.75.2 365订阅版                                                                                      |   ✅   |   ✅   | ❌   | 需要从Mac AppStore 下载                        |
 | Affinity Photo 2/Designer 2/Publisher 2 全家桶    | 2.1.1                                                                                               |   ✅   |   ✅   | ❌   | 需要从Mac AppStore 下载                        |
-| ProxyMan                                       | 4.9.0                                                                                               |   ✅   |   ✅   | ⏳   |                                           |
+| ProxyMan                                       | [4.9.1](https://download.proxyman.io/49001/Proxyman_4.9.1.dmg)                                      |   ✅   |   ✅   | ✅   | 更新地址: https://proxyman.io/osx/version.xml |
 
 | Adobe 全家桶               | 版本                                                       | ARM64 | Intel | 特殊说明                         |
 |:------------------------|:---------------------------------------------------------|:-----:|:-----:|:-----------------------------|
@@ -99,7 +100,8 @@ laoliu，good morning. not good also fine, follow u.
 Surge盗版用户请支持正版。<br>
 我对开发者致敬说个早上好也被某些无脑用户过度解读是嘲讽开发者是吧？那我直接说操你妈是不是你全家骨灰都被我扬了？<br>
 Surge是非常好的一个产品，我发我的补丁 你支持你自己的正版，who care u?<br>
-有的人不要两头带节奏 在正版群对开发者那边截图破解版嘲笑还打着为开发者着想的幌子拱火 另一边下破解版在别的电脑上用 这种人你的米线很低我就不评价了 但是你的🐎肯定必死。<br>
+有的人不要两头带节奏 在正版群对开发者那边截图破解版嘲笑还打着为开发者着想的幌子拱火 另一边下破解版在别的电脑上用
+这种人你的米线很低我就不评价了 但是你的🐎肯定必死。<br>
 
 对开发者团队我无意冒犯，早上好。<br>
 

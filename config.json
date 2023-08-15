@@ -25,7 +25,7 @@
       "injectFile": "Bugsnag.framework/Versions/A/Bugsnag",
       "needCopyToAppDir": true,
       "extraShell": "surge.sh",
-      "supportSubVersion": ["2363", "2364", "2367", "2369", "2374"]
+      "supportSubVersion": ["2363", "2364", "2367", "2369", "2374", "2375"]
     },
     {
       "packageName": "app.elpass.macos",
@@ -157,7 +157,10 @@
     {
       "packageName": "com.proxyman.NSProxy",
       "injectFile": "Moya.framework/Versions/A/Moya",
-      "supportVersion": ["4.8.0", "4.8.1", "4.8.2", "4.9.0"]
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
+      "extraShell": "proxyman.sh",
+      "supportVersion": ["4.8.0", "4.8.1", "4.8.2", "4.9.0", "4.9.1"]
     },
     {
       "packageName": [
@@ -178,7 +181,16 @@
       "bridgeFile": "/Contents/MacOS/",
       "extraShell": "paste.sh",
       "injectFile": "Paste",
-      "supportVersion": ["4.0.1", "4.0.2", "4.0.3", "4.0.4"]
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
+      "supportVersion": ["4.0.1", "4.0.2", "4.0.3", "4.0.4", "4.0.5"]
+    },
+    {
+      "packageName": "cn.better365.ishot",
+      "injectFile": "PTHotKey.framework/Versions/A/PTHotKey",
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
+      "extraShell": "ishot.sh"
     }
   ]
 }
