@@ -25,7 +25,7 @@
       "injectFile": "Bugsnag.framework/Versions/A/Bugsnag",
       "needCopyToAppDir": true,
       "extraShell": "surge.sh",
-      "supportSubVersion": ["2363", "2364", "2367", "2369", "2374", "2375"]
+      "supportSubVersion": ["2363", "2364", "2367", "2369", "2374", "2375", "2377"]
     },
     {
       "packageName": "app.elpass.macos",
