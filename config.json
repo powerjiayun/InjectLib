@@ -25,7 +25,15 @@
       "injectFile": "Bugsnag.framework/Versions/A/Bugsnag",
       "needCopyToAppDir": true,
       "extraShell": "surge.sh",
-      "supportSubVersion": ["2363", "2364", "2367", "2369", "2374", "2375", "2377"]
+      "supportSubVersion": [
+        "2363",
+        "2364",
+        "2367",
+        "2369",
+        "2374",
+        "2375",
+        "2377"
+      ]
     },
     {
       "packageName": "app.elpass.macos",
@@ -59,19 +67,36 @@
     {
       "packageName": "com.nektony.App-Cleaner-SIII",
       "injectFile": "NektonyFallManager.framework/Versions/A/NektonyFallManager",
-      "supportVersion": ["8.2.1", "8.2.2"]
+      "supportVersion": [
+        "8.2.1",
+        "8.2.2"
+      ]
     },
     {
       "packageName": "com.macpaw.CleanMyMac4",
       "injectFile": "Announcements.framework/Versions/A/Announcements",
-      "supportVersion": ["4.13.4", "4.14.0b1", "4.14.0", "4.14.1"]
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
+      "extraShell": "cmm.sh"
+    },
+    {
+      "packageName": "com.macpaw.CleanMyMac4.Menu",
+      "appBaseLocate": "/Applications/CleanMyMac X.app/Contents/Library/LoginItems/CleanMyMac X Menu.app",
+      "injectFile": "CMMNotifications.framework/Versions/A/CMMNotifications",
+      "needCopyToAppDir": true,
+      "deepSignApp": true
     },
     {
       "packageName": "com.parallels.desktop.console",
       "injectFile": "QtXml.framework/Versions/5/QtXml",
       "extraShell": "pd.sh",
       "disableLibraryValidate": true,
-      "supportSubVersion": ["53606", "53488", "53614", "53621"]
+      "supportSubVersion": [
+        "53606",
+        "53488",
+        "53614",
+        "53621"
+      ]
     },
     {
       "packageName": "com.artdesktop.bestzip2",
@@ -88,25 +113,36 @@
       "packageName": "com.adobe.Photoshop",
       "appBaseLocate": "/Applications/Adobe Photoshop (Beta)/Adobe Photoshop (Beta).app",
       "injectFile": "AdobeAGM.framework/Versions/A/AdobeAGM",
-      "supportVersion": ["25.0.0"]
+      "supportVersion": [
+        "25.0.0"
+      ]
     },
     {
       "packageName": "com.adobe.Photoshop",
       "appBaseLocate": "/Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app",
       "injectFile": "AdobeAGM.framework/Versions/A/AdobeAGM",
-      "supportVersion": ["24.5.0", "24.6.0", "24.7.0"]
+      "supportVersion": [
+        "24.5.0",
+        "24.6.0",
+        "24.7.0"
+      ]
     },
     {
       "packageName": "com.adobe.illustrator",
       "appBaseLocate": "/Applications/Adobe Illustrator 2023/Adobe Illustrator.app",
       "injectFile": "AdobeAGM.framework/Versions/A/AdobeAGM",
-      "supportVersion": ["27.5.0", "27.6.1"]
+      "supportVersion": [
+        "27.5.0",
+        "27.6.1"
+      ]
     },
     {
       "packageName": "com.adobe.PremierePro.23",
       "appBaseLocate": "/Applications/Adobe Premiere Pro 2023/Adobe Premiere Pro 2023.app",
       "injectFile": "AdobeAGM.framework/Versions/A/AdobeAGM",
-      "supportVersion": ["23.5"]
+      "supportVersion": [
+        "23.5"
+      ]
     },
     {
       "packageName": "com.adobe.Acrobat.Pro",
@@ -123,27 +159,46 @@
       "packageName": "com.adobe.LightroomClassicCC7",
       "appBaseLocate": "/Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app",
       "injectFile": "AgUI.framework/Versions/A/AgUI",
-      "supportVersion": ["12.3", "12.4"]
+      "supportVersion": [
+        "12.3",
+        "12.4"
+      ]
     },
     {
       "packageName": "com.microsoft.Excel",
       "injectFile": "FluentUI.framework/Versions/A/FluentUI",
-      "supportVersion": ["16.74", "16.75", "16.75.2"]
+      "supportVersion": [
+        "16.74",
+        "16.75",
+        "16.75.2"
+      ]
     },
     {
       "packageName": "com.microsoft.Powerpoint",
       "injectFile": "FluentUI.framework/Versions/A/FluentUI",
-      "supportVersion": ["16.74", "16.75"]
+      "supportVersion": [
+        "16.74",
+        "16.75"
+      ]
     },
     {
       "packageName": "com.microsoft.Word",
       "injectFile": "FluentUI.framework/Versions/A/FluentUI",
-      "supportVersion": ["16.74", "16.75"]
+      "supportVersion": [
+        "16.74",
+        "16.75"
+      ]
     },
     {
       "packageName": "com.microsoft.Outlook",
       "injectFile": "FluentUI.framework/Versions/A/FluentUI",
-      "supportVersion": ["16.74", "16.74.1", "16.74.2", "16.75", "16.75.1"]
+      "supportVersion": [
+        "16.74",
+        "16.74.1",
+        "16.74.2",
+        "16.75",
+        "16.75.1"
+      ]
     },
     {
       "packageName": "com.mac.utility.screen.recorder",
@@ -160,7 +215,13 @@
       "needCopyToAppDir": true,
       "deepSignApp": true,
       "extraShell": "proxyman.sh",
-      "supportVersion": ["4.8.0", "4.8.1", "4.8.2", "4.9.0", "4.9.1"]
+      "supportVersion": [
+        "4.8.0",
+        "4.8.1",
+        "4.8.2",
+        "4.9.0",
+        "4.9.1"
+      ]
     },
     {
       "packageName": [
@@ -169,12 +230,17 @@
         "com.seriflabs.affinitypublisher2"
       ],
       "injectFile": "liblibzlib.dylib",
-      "supportVersion": ["2.1.0", "2.1.1"]
+      "supportVersion": [
+        "2.1.0",
+        "2.1.1"
+      ]
     },
     {
       "packageName": "com.panic.transmit.mas",
       "injectFile": "ZipZap.framework/Versions/A/ZipZap",
-      "supportVersion": ["5.9.2"]
+      "supportVersion": [
+        "5.9.2"
+      ]
     },
     {
       "packageName": "com.wiheads.paste",
@@ -183,7 +249,13 @@
       "injectFile": "Paste",
       "needCopyToAppDir": true,
       "deepSignApp": true,
-      "supportVersion": ["4.0.1", "4.0.2", "4.0.3", "4.0.4", "4.0.5"]
+      "supportVersion": [
+        "4.0.1",
+        "4.0.2",
+        "4.0.3",
+        "4.0.4",
+        "4.0.5"
+      ]
     },
     {
       "packageName": "cn.better365.ishot",

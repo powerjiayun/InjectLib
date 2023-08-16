@@ -156,8 +156,8 @@ def main
 
     sh = "sudo #{current}/tool/insert_dylib #{current}/tool/libInjectLib.dylib #{backup} #{dest}"
     unless needCopy2AppDir.nil?
-        system "sudo cp #{current}/tool/libInjectLib.dylib #{appBaseLocate + bridgeFile}libInjectLib.dylib"
-        sh = "sudo #{current}/tool/insert_dylib #{appBaseLocate + bridgeFile}libInjectLib.dylib #{backup} #{dest}"
+        system "sudo cp #{current}/tool/libInjectLib.dylib #{Shellwords.escape(appBaseLocate + bridgeFile)}libInjectLib.dylib"
+        sh = "sudo #{current}/tool/insert_dylib #{Shellwords.escape(appBaseLocate + bridgeFile)}libInjectLib.dylib #{backup} #{dest}"
     end
     # puts sh
     system sh
@@ -174,7 +174,7 @@ def main
     end
 
     unless deepSignApp.nil?
-       system "codesign -f -s - --timestamp=none --all-architectures --deep #{appBaseLocate}"
+       system "codesign -f -s - --timestamp=none --all-architectures --deep #{Shellwords.escape(appBaseLocate)}"
     end
   }
 end
