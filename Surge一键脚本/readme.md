@@ -24,6 +24,6 @@ curl -k https://ghproxy.com/https://github.com/LanYunDev/InjectLib_bak/releases/
 
 若不想执行代码，只想用成品:
 
-https://github.com/LanYunDev/InjectLib/releases
+https://github.com/LanYunDev/InjectLib_bak/releases
 
 小小的Blog: https://lanyundev.com/posts/c659a0ce.html
