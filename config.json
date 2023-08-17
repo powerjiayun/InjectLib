@@ -133,7 +133,8 @@
       "injectFile": "AdobeAGM.framework/Versions/A/AdobeAGM",
       "supportVersion": [
         "27.5.0",
-        "27.6.1"
+        "27.6.1",
+        "27.8.1"
       ]
     },
     {

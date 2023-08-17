@@ -79,7 +79,7 @@
 | Adobe PhotoShop         | 24.7.0                                                   |   ✅   |   ✅   | PS:神经滤镜已经完美可用                |
 | Adobe PhotoShop Beta    | Adobe Photoshop 子版本: 25.0.0 20230801.m.2265 3a00623  x64 |   ❌   |   ✅   | 支持创意填充/神经滤镜 需要随便登录个账户        |
 | Adobe Acrobat           | 23.003.20244                                             |   ✅   |   ✅   |                              |
-| Adobe Illustrator       | 27.6.1                                                   |   ✅   |   ✅   |                              |
+| Adobe Illustrator       | 27.8.1                                                   |   ✅   |   ❔   | ARM64 测试通过 X86没有测试过 大家自行测试   |
 | Adobe Lightroom Classic | 12.4                                                     |   ❌   |   ❌   | 功能不可用 等后续更新                  |
 | Adobe Premiere Pro      | 23.5                                                     |   ❔   |   ❔   | M1/x86版本灰度测试 测试报告有效/无效 我没有安装 |
 
