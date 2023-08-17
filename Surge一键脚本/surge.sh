@@ -25,6 +25,7 @@ read flag
 if [[ $flag != y ]]; then
      exit 1
 fi
+flag="" # 重置变量
 
 user=$(whoami)
 {
@@ -47,8 +48,8 @@ user=$(whoami)
 read -r -t 5 -p "⚙️ 是否(y/n)已安装 Surge-5.3.1-2377 ? 5秒后自动安装." flag || true
 echo ""
 if [[ $flag != n ]]; then
-  curl -k -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" -o /tmp/Surge-5.3.1.zip "https://ghproxy.com/https://github.com/LanYunDev/InjectLib_bak/releases/download/surge/Surge-5.3.1-2377-cac8e042e93f0418baf87ec6ef85dc2c.zip" || (echo "网络原因,请检查网络." && exit 1)
-  unzip -qq -o "/tmp/Surge-5.3.1.zip" -d "/Applications" || exit 1
+  curl -k -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" -o /tmp/Surge-5.3.1.zip "https://ghproxy.com/https://github.com/LanYunDev/InjectLib_bak/releases/download/surge/Surge-5.3.1-2377-cac8e042e93f0418baf87ec6ef85dc2c.zip" || (echo "Surge-5.3.1-2377安装失败☹️,网络原因,请检查网络." && exit 1)
+  unzip -qq -o "/tmp/Surge-5.3.1.zip" -d "/Applications" || (echo "解压失败☹️,压缩包可能已损坏.请重新下载." && exit 1)
 fi
 flag="" # 重置变量
 # curl -k -A "Mozilla/5.0 Chrome/58.0.3029.110" -o /tmp/insert_dylib "https://ghproxy.com/https://raw.githubusercontent.com/QiuChenlyOpenSource/InjectLib/main/tool/insert_dylib" || (echo "网络原因,请检查网络." && exit 1)
@@ -56,10 +57,10 @@ flag="" # 重置变量
 # sudo chmod +x /tmp/insert_dylib
 # sudo cp /tmp/libInjectLib.dylib /Applications/Surge.app/Contents/Frameworks/libInjectLib.dylib
 if [[ ! -e "../tool/insert_dylib" ]]; then
-  echo "⚠️ 确保本脚本目录中存在insert_dylib" && exit 1
+  echo "⚠️ 确保上级tool目录中存在insert_dylib" && exit 1
 fi
 if [[ ! -e "../tool/libInjectLib.dylib" ]]; then
-  echo "⚠️ 确保本脚本目录中存在insert_dylib" && exit 1
+  echo "⚠️ 确保上级tool目录中存在libInjectLib.dylib" && exit 1
 fi
 chmod +x "../tool/insert_dylib"
 sudo cp -f "../tool/libInjectLib.dylib" "/Applications/Surge.app/Contents/Frameworks/libInjectLib.dylib" || exit 1
