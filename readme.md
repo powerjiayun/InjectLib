@@ -27,6 +27,10 @@
 * [~~停更~~](#停更)
 <!-- TOC -->
 
+### 让你们看看原神的力量 去吧 芭芭拉！
+
+[![启动](https://i2.hdslb.com/bfs/archive/966fe6fe2c1329919bb8972d69fb8c09d17047cc.jpg@100w_100h_1c.png)](https://ipfs.lanyundev.com/ipfs/bafybeigpm6ocaba2wlgi7zgio3lu7hzqxgrviiicuwc5xbddlo77leabcy/6e51fccaeb5343bda366d42e68c3c705.MP4)
+
 # 使用
 
 1. 终端进入本文件夹
