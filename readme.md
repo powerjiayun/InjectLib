@@ -103,12 +103,16 @@
 
 # PD 18
 
-PD18 说明与注意事项:
+PD18 说明与注意事项:<br>
 
 1. 注入后先运行"Launch Parallels_原神.command"，PD将会自动启动。
 2. 打开PD后不要运行虚拟机，确认已经激活后运行"Launch Parallels_启动.command"，提示操作已成功完成即可使用虚拟机。
 3. 每次打开PD都要重复步骤1、2才能完美使用。步骤2执行一次之后只要PD你没有退出，就可以直接使用PD不需要再去执行步骤1、2。
 4. 总结: 原神，启动！
+
+灵感和解决思路来自于:<br>
+仓库: https://github.com/trueToastedCode/ParallelsLab/tree/%3E18.1.1-53328-lab<br>
+非常感谢trueToastedCode提出的想法和美妙设计！
 
 # Stash
 
