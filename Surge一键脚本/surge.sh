@@ -45,10 +45,10 @@ user=$(whoami)
 } > /dev/null 2>&1
 
 # wget -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" -P /tmp "https://ghproxy.com/https://github.com/LanYunDev/InjectLib/releases/download/surge/Surge-5.2.4-2363-22d1e0411e23b507a94ca4dbb86b7d3c.zip"
-read -r -t 5 -p "⚙️ 是否(y/n)已安装 Surge-5.3.1-2377 ? 5秒后自动安装." flag || true
+read -r -t 5 -p "⚙️ 是否(y/n)已安装 Surge-5.3.1-2379 ? 5秒后自动安装." flag || true
 echo ""
 if [[ $flag != n ]]; then
-  curl -k -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" -o /tmp/Surge-5.3.1.zip "https://ghproxy.com/https://github.com/LanYunDev/InjectLib_bak/releases/download/surge/Surge-5.3.1-2377-cac8e042e93f0418baf87ec6ef85dc2c.zip" || (echo "Surge-5.3.1-2377安装失败☹️,网络原因,请检查网络." && exit 1)
+  curl -k -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" -o /tmp/Surge-5.3.1.zip "https://ghproxy.com/https://github.com/LanYunDev/InjectLib_bak/releases/download/surge/Surge-5.3.1-2379-7ed7da49bb330d3439be7347c9294a08.zip" || (echo "Surge-5.3.1-2379安装失败☹️,网络原因,请检查网络." && exit 1)
   unzip -qq -o "/tmp/Surge-5.3.1.zip" -d "/Applications" || (echo "解压失败☹️,压缩包可能已损坏.请重新下载." && exit 1)
 fi
 flag="" # 重置变量
@@ -69,12 +69,9 @@ sudo ../tool/insert_dylib "/Applications/Surge.app/Contents/Frameworks/libInject
 
 helper='/Applications/Surge.app/Contents/Library/LaunchServices/com.nssurge.surge-mac.helper'
 
+# 版本2379
 echo a5a3: 6A 01 58 C3 |sudo xxd -r - "$helper" #intel
 echo 4172c: 20 00 80 D2 C0 03 5F D6 |sudo xxd -r - "$helper" #arm64
-
-# 版本 5.3.1
-echo 65a3: 6A 01 58 C3 |sudo xxd -r - "$helper" #intel
-echo 972c: 20 00 80 D2 C0 03 5F D6 |sudo xxd -r - "$helper" #arm64
 
 offsets=$(grep -a -b -o "\x3C\x73\x74\x72\x69\x6E\x67\x3E\x61\x6E\x63\x68\x6F\x72" $helper | cut -d: -f1)
 sed 's/\x0A/\n/g' <<< "$offsets" | while read -r s; do
@@ -109,26 +106,3 @@ open /Applications/Surge.app
 
 
 
-
-
-
-
-
-# 废弃代码:
-# 提示用户输入密码以获取 sudo 权限
-# echo "本脚本依赖管理员权限,请输入您的密码以获取权限."
-# sudo -v
-
-# 判断当前用户是否具有 sudo 权限
-# if [ $(id -u) -ne 0 ]; then
-#   echo "当前用户没有 sudo 权限，正在尝试提权..."
-#   # 使用 sudo 命令提权
-#   if sudo -v; then
-#     echo "提权成功"
-#   else
-#     echo "提权失败，请检查密码是否正确"
-#     exit 1
-#   fi
-# else
-#   echo "当前用户已经具有 sudo 权限"
-# fi
