@@ -12,7 +12,9 @@
     "extraShell": "额外的执行shell，比如PD18需要执行一些额外的shell，支持自定义。",
     "needCopyToAppDir": "有些app需要复制到app目录中才能在SIP打开的时候运行 这个属性可以控制库文件被复制到Framework",
     "deepSignApp": "自动签名整个App",
-    "disableLibraryValidate": "关闭库验证 暂时只为pd启用"
+    "disableLibraryValidate": "关闭库验证 暂时只为pd启用",
+    "entitlements": "用于跳过部分权限 在启用SIP的macOS上 如ARM64",
+    "noSignTarget": "默认注入后会对目标文件进行签名,我们有时候不需要这个行为。"
   },
   "basePublicConfig": {
     "bridgeFile": "/Contents/Frameworks/"
@@ -91,9 +93,10 @@
     },
     {
       "packageName": "com.parallels.desktop.console",
-      "injectFile": "QtXml.framework/Versions/5/QtXml",
+      "bridgeFile": "/Contents/MacOS/Parallels Service.app/Contents/MacOS/",
+      "injectFile": "prl_disp_service",
       "extraShell": "pd.sh",
-      "disableLibraryValidate": true,
+      "noSignTarget": true,
       "supportSubVersion": ["53606", "53488", "53614", "53621"]
     },
     {
@@ -155,6 +158,7 @@
       ],
       "needCopyToAppDir": true,
       "deepSignApp": true,
+      "entitlements": "signkeep.xml",
       "injectFile": "FluentUI.framework/Versions/A/FluentUI"
     },
     {

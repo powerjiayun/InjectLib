@@ -98,6 +98,8 @@ def main
     needCopy2AppDir = app['needCopyToAppDir']
     deepSignApp = app['deepSignApp']
     disableLibraryValidate = app['disableLibraryValidate']
+    entitlements = app['entitlements']
+    noSignTarget = app['noSignTarget']
 
     localApp = install_apps.select { |_app| _app['CFBundleIdentifier'] == packageName }
     if localApp.empty? && (appBaseLocate.nil? || !Dir.exist?(appBaseLocate))
@@ -161,8 +163,17 @@ def main
     end
     # puts sh
     system sh
-    sh = "codesign -f -s - --timestamp=none --all-architectures --deep #{dest}"
-    system sh
+
+    signPrefix = "codesign -f -s - --timestamp=none --all-architectures --deep"
+
+    unless entitlements.nil?
+      signPrefix = "codesign -f -s - --timestamp=none --all-architectures --deep --entitlements #{current}/tool/#{entitlements}"
+    end
+
+    if noSignTarget.nil?
+      puts "开始签名..."
+      system "#{signPrefix} #{dest}"
+    end
 
     unless disableLibraryValidate.nil?
       sh = "sudo defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true"
@@ -173,8 +184,8 @@ def main
       system "sudo sh #{current}/tool/" + extraShell
     end
 
-    unless deepSignApp.nil?
-       system "codesign -f -s - --timestamp=none --all-architectures --deep #{Shellwords.escape(appBaseLocate)}"
+    if deepSignApp
+       system "#{signPrefix} #{Shellwords.escape(appBaseLocate)}"
     end
   }
 end

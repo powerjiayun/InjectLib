@@ -10,7 +10,7 @@ COLOR_ERR='\033[0;35m'
 NOCOLOR='\033[0m'
 
 PDFM_DIR="/Applications/Parallels Desktop.app"
-PDFM_VER="18.3.1-53614"
+PDFM_VER="18.3.2-53621"
 
 LICENSE_FILE="${BASE_PATH}/licenses.json"
 LICENSE_DST="/Library/Preferences/Parallels/licenses.json"
@@ -54,5 +54,7 @@ chflags schg "${LICENSE_DST}" || {
   echo -e "${COLOR_ERR}error $? at line $LINENO.${NOCOLOR}"
   exit $?
 }
+
+cp -f "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service" "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service_patched"
 
 echo "${COLOR_INFO}[*] 破解完成。${NOCOLOR}"

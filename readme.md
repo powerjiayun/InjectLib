@@ -18,6 +18,7 @@
 - [问题](#问题)
 - [环境](#环境)
 - [兼容](#兼容)
+- [PD 18](#pd-18)
 - [Stash](#stash)
 - [ELPass](#elpass)
 - [Surge](#surge)
@@ -34,9 +35,8 @@
 
 # 使用
 
-1. 终端进入本文件夹
-2. 执行 sudo ruby main.rb 启动注入程序。
-3. 要是你不差这几分钟时间，从头到尾先认真读一遍这个readme，可能你看完之后会解决你的部分疑惑。
+1. 下载解压，双击运行"原神_启动.command"并输入密码，按照提示操作。
+2. 要是你不差这几分钟时间，从头到尾先认真读一遍这个readme，可能你看完之后会解决你的部分疑惑。
 
 # 问题
 这里列举一下可能会遇到的问题。
@@ -85,7 +85,7 @@
 | Surge 5                                        | [通杀](https://dl.nssurge.com/mac/v5/Surge-5.3.1-2377-cac8e042e93f0418baf87ec6ef85dc2c.zip)           |   ✅   |   ✅   | ✅   | 年度好戏我愿称之为 《窃听风云8:赛博卧底》                                                                                                                                                          | 
 | CleanMyMac X                                   | 通杀                                                                                                  |   ✅   |   ✅   | ✅   | com.macpaw.CleanMyMac4.Menu 单独也要注入 Helper每个版本不一样还是需要单独处理 暂时不弄了 不要下大陆特供版 更新地址: https://s3-us-west-2.amazonaws.com/updateinfo.devmate.com/com.macpaw.CleanMyMac4/beta/updates.xml | 
 | Microsoft Office Word/PowerPoint/Excel/Outlook | 通杀                                                                                                  |   ✅   |   ✅   | ✅   | 365订阅版 需要从Mac AppStore 下载                                                                                                                                                       |
-| Parallels Desktop                              | [18.3.2](https://download.parallels.com/desktop/v18/18.3.2-53621/ParallelsDesktop-18.3.2-53621.dmg) |   ✅   |   ✅   | ❌   |                                                                                                                                                                                 | 
+| Parallels Desktop                              | [18.3.2](https://download.parallels.com/desktop/v18/18.3.2-53621/ParallelsDesktop-18.3.2-53621.dmg) |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
 | Stash                                          | [2.3.0](https://mac-release-static.stash.ws/Stash-build-221.zip)                                    |   ❌   |   ✅   | ❌   | 无法设置全局代理 不知道哪里有问题 总体体验较差 不如surge                                                                                                                                                |
 | Paste                                          | 4.0.5                                                                                               |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
 | App Cleaner & Uninstaller                      | 8.2.2                                                                                               |   ✅   |   ✅   | ❌   | ARM64懒得弄了                                                                                                                                                                       | 
@@ -100,6 +100,15 @@
 | Adobe Illustrator       | 27.8.1                                                   |   ✅   |   ❔   | ARM64 测试通过 X86没有测试过 大家自行测试   |
 | Adobe Lightroom Classic | 12.4                                                     |   ❌   |   ❌   | 功能不可用 等后续更新                  |
 | Adobe Premiere Pro      | 23.5                                                     |   ❔   |   ❔   | M1/x86版本灰度测试 测试报告有效/无效 我没有安装 |
+
+# PD 18
+
+PD18 说明与注意事项:
+
+1. 注入后先运行"Launch Parallels_原神.command"，PD将会自动启动。
+2. 打开PD后不要运行虚拟机，确认已经激活后运行"Launch Parallels_启动.command"，提示操作已成功完成即可使用虚拟机。
+3. 每次打开PD都要重复步骤1、2才能完美使用。步骤2执行一次之后只要PD你没有退出，就可以直接使用PD不需要再去执行步骤1、2。
+4. 总结: 原神，启动！
 
 # Stash
 
