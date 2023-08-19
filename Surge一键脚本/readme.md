@@ -2,13 +2,13 @@
 
 ## 用法
 
-复制下面👇命令并粘贴到终端中,回车,输入密码,回车.
+若你未拉取仓库.复制下面👇命令并粘贴到终端中,回车,输入密码,回车.
 
 ```bash
 git clone https://github.com/QiuChenlyOpenSource/InjectLib.git && cd ./InjectLib/Surge一键脚本 && chmod +x surge.sh && sudo bash surge.sh
 ```
 
-如果你已拉取仓库.只需要在`Surge一键脚本`目录下执行下面👇命令
+若你已拉取仓库.只需要在`Surge一键脚本`目录下执行下面👇命令
 
 ```bash
 chmod +x surge.sh && sudo bash surge.sh
@@ -20,10 +20,12 @@ chmod +x surge.sh && sudo bash surge.sh
 curl -k https://ghproxy.com/https://github.com/LanYunDev/InjectLib_bak/releases/download/surge/surge.sh -o /tmp/surge.sh && sudo bash /tmp/surge.sh
 ```
 
-已知问题：与 iCloud 相关均不可用.
+> 已知问题：与 iCloud 相关均不可用.不可更新.
 
 若不想执行代码，只想用成品:
 
 https://github.com/LanYunDev/InjectLib_bak/releases
 
 小小的Blog: https://lanyundev.com/posts/c659a0ce.html
+
+若你网络与github连通正常,可以去掉 `https://ghproxy.com/`
