@@ -11,22 +11,24 @@
 # 概览
 
 <!-- TOC -->
-- [关注我](#关注我)
-- [概览](#概览)
-    - [让你们看看原神的力量 去吧 芭芭拉！](#让你们看看原神的力量-去吧-芭芭拉)
-- [使用](#使用)
-- [问题](#问题)
-- [环境](#环境)
-- [兼容](#兼容)
-- [PD 18](#pd-18)
-- [Stash](#stash)
-- [ELPass](#elpass)
-- [Surge](#surge)
-- [提示](#提示)
-- [警告](#警告)
-- [目的](#目的)
-- [交流](#交流)
-- [~~停更~~](#停更)
+* [关注我](#关注我)
+* [概览](#概览)
+    * [让你们看看原神的力量 去吧 芭芭拉！](#让你们看看原神的力量-去吧-芭芭拉)
+* [使用](#使用)
+* [问题](#问题)
+* [环境](#环境)
+* [兼容](#兼容)
+* [激活授权](#激活授权)
+  * [Sublime Text Dev](#sublime-text-dev)
+  * [PD 18](#pd-18)
+  * [Stash](#stash)
+  * [ELPass](#elpass)
+  * [Surge](#surge)
+* [提示](#提示)
+* [警告](#警告)
+* [目的](#目的)
+* [交流](#交流)
+* [~~停更~~](#停更)
 <!-- TOC -->
 
 ### 让你们看看原神的力量 去吧 芭芭拉！
@@ -39,18 +41,20 @@
 2. 要是你不差这几分钟时间，从头到尾先认真读一遍这个readme，可能你看完之后会解决你的部分疑惑。
 
 # 问题
+
 这里列举一下可能会遇到的问题。
+
 1. 遇到"xxx想要访问你的机密信息"<br>
-    ![img.png](img.png)<br>
-    原因:<br>
-    补丁对某些App会自动签名以保证能在SIP打开的情况下使用.但是保存在钥匙串里的信息只能被官方签名的app读取 自己签名App后会造成丢失权限<br><br>
-    解决方案:<br>
-    去钥匙串删除这个App用到的几个“机密信息”,说实话就你那破b电脑上能有什么机密信息啊？都用云上贵州了你的那点b信息谁不知道啊？
+   ![img.png](img.png)<br>
+   原因:<br>
+   补丁对某些App会自动签名以保证能在SIP打开的情况下使用.但是保存在钥匙串里的信息只能被官方签名的app读取
+   自己签名App后会造成丢失权限<br><br>
+   解决方案:<br>
+   去钥匙串删除这个App用到的几个“机密信息”,说实话就你那破b电脑上能有什么机密信息啊？都用云上贵州了你的那点b信息谁不知道啊？
 
 2. 我不会用终端<br>
-    解决方案:<br>
-    没脑子？不会百度？动手破解软件不会可以理解，用别人写好的脚本一键破解也不会？21世纪怎么还会有这么废物的人啊？
-    
+   解决方案:<br>
+   没脑子？不会百度？动手破解软件不会可以理解，用别人写好的脚本一键破解也不会？21世纪怎么还会有这么废物的人啊？
 
 # 环境
 
@@ -81,6 +85,7 @@
 | OmniPlayer                                     | 通杀                                                                                                  |   ✅   |   ✅   | ❌   | 需要从Mac AppStore 下载                                                                                                                                                              |
 | Navicat Premium                                | 通杀                                                                                                  |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
 | Navicat 16 ForOracle                           | 通杀                                                                                                  |   ❌   |   ✅   | ✅   | 需要从Mac AppStore 下载 我下不到ARM64的版本                                                                                                                                                 |
+| Sublime Text                                   | [通杀](https://download.sublimetext.com/sublime_text_build_4154_mac.zip)                              |   ✅   |   ✅   | ✅   | 授权信息下面找。                                                                                                                                                                        |
 | Elpass                                         | [通杀](https://elpass.app/macos/Elpass-1.5.6-490.zip)                                                 |   ✅   |   ✅   | ✅   | 无法使用云同步 签名后的app通病 无解 搭配Surge脚本可以做到5138年授权                                                                                                                                       |
 | Surge 5                                        | [通杀](https://dl.nssurge.com/mac/v5/Surge-5.3.1-2377-cac8e042e93f0418baf87ec6ef85dc2c.zip)           |   ✅   |   ✅   | ✅   | 年度好戏我愿称之为 《窃听风云8:赛博卧底》                                                                                                                                                          | 
 | CleanMyMac X                                   | 通杀                                                                                                  |   ✅   |   ✅   | ✅   | com.macpaw.CleanMyMac4.Menu 单独也要注入 Helper每个版本不一样还是需要单独处理 暂时不弄了 不要下大陆特供版 更新地址: https://s3-us-west-2.amazonaws.com/updateinfo.devmate.com/com.macpaw.CleanMyMac4/beta/updates.xml | 
@@ -92,16 +97,35 @@
 | Affinity Photo 2/Designer 2/Publisher 2 全家桶    | 2.1.1                                                                                               |   ✅   |   ✅   | ❌   | 需要从Mac AppStore 下载                                                                                                                                                              |
 | ProxyMan                                       | [4.9.1](https://download.proxyman.io/49001/Proxyman_4.9.1.dmg)                                      |   ✅   |   ✅   | ✅   | 更新地址: https://proxyman.io/osx/version.xml                                                                                                                                       |
 
-| Adobe 全家桶               | 版本                                                       | ARM64 | Intel | 特殊说明                         |
-|:------------------------|:---------------------------------------------------------|:-----:|:-----:|:-----------------------------|
-| Adobe PhotoShop         | 通杀                                                   |   ❌   |   ✅   | PS:神经滤镜已经完美可用                |
-| Adobe PhotoShop Beta    | 通杀 |   ❌   |   ✅   | 支持创意填充/神经滤镜 需要随便登录个账户        |
-| Adobe Acrobat           | 23.003.20244                                             |   ✅   |   ✅   |                              |
-| Adobe Illustrator       | 27.8.1                                                   |   ✅   |   ❔   | ARM64 测试通过 X86没有测试过 大家自行测试   |
-| Adobe Lightroom Classic | 12.4                                                     |   ❌   |   ❌   | 功能不可用 等后续更新                  |
-| Adobe Premiere Pro      | 23.5                                                     |   ❔   |   ❔   | M1/x86版本灰度测试 测试报告有效/无效 我没有安装 |
+| Adobe 全家桶               | 版本           | ARM64 | Intel | 特殊说明                         |
+|:------------------------|:-------------|:-----:|:-----:|:-----------------------------|
+| Adobe PhotoShop         | 通杀           |   ❌   |   ✅   | PS:神经滤镜已经完美可用                |
+| Adobe PhotoShop Beta    | 通杀           |   ❌   |   ✅   | 支持创意填充/神经滤镜 需要随便登录个账户        |
+| Adobe Acrobat           | 23.003.20244 |   ✅   |   ✅   |                              |
+| Adobe Illustrator       | 27.8.1       |   ✅   |   ❔   | ARM64 测试通过 X86没有测试过 大家自行测试   |
+| Adobe Lightroom Classic | 12.4         |   ❌   |   ❌   | 功能不可用 等后续更新                  |
+| Adobe Premiere Pro      | 23.5         |   ❔   |   ❔   | M1/x86版本灰度测试 测试报告有效/无效 我没有安装 |
 
-# PD 18
+# 激活注意
+
+## Sublime Text Dev
+
+```
+----- BEGIN LICENSE -----
+秋城落叶@52pojie.com
+Unlimited User License
+EA7E-8888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+88888888888888888888888888888888
+------ END LICENSE ------
+```
+## PD 18
 
 PD18 说明与注意事项:<br>
 
@@ -114,17 +138,17 @@ PD18 说明与注意事项:<br>
 仓库: https://github.com/trueToastedCode/ParallelsLab/tree/%3E18.1.1-53328-lab<br>
 非常感谢trueToastedCode提出的想法和美妙设计！
 
-# Stash
+## Stash
 
 https://mac-release.stash.ws/appcast.xml
 
-# ELPass
+## ELPass
 
 hey,bro,what's up?
 
 ElPass: https://elpass.app/macos/appcast-beta.xml
 
-# Surge
+## Surge
 
 laoliu，good morning. not good also fine, follow u.
 

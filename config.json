@@ -74,6 +74,8 @@
     },
     {
       "packageName": "com.nektony.App-Cleaner-SIII",
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
       "injectFile": "NektonyFallManager.framework/Versions/A/NektonyFallManager",
       "supportVersion": ["8.2.1", "8.2.2"]
     },
@@ -160,6 +162,13 @@
       "deepSignApp": true,
       "entitlements": "signkeep.xml",
       "injectFile": "FluentUI.framework/Versions/A/FluentUI"
+    },{
+      "packageName": "com.sublimetext.4",
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
+      "entitlements": "signkeep.xml",
+      "bridgeFile": "/Contents/MacOS/",
+      "injectFile": "sublime_text"
     },
     {
       "packageName": "com.mac.utility.screen.recorder",
