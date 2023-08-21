@@ -77,7 +77,10 @@
       "needCopyToAppDir": true,
       "deepSignApp": true,
       "injectFile": "NektonyFallManager.framework/Versions/A/NektonyFallManager",
-      "supportVersion": ["8.2.1", "8.2.2"]
+      "supportVersion": [
+        "8.2.1",
+        "8.2.2"
+      ]
     },
     {
       "packageName": "com.macpaw.CleanMyMac4",
@@ -99,7 +102,12 @@
       "injectFile": "prl_disp_service",
       "extraShell": "pd.sh",
       "noSignTarget": true,
-      "supportSubVersion": ["53606", "53488", "53614", "53621"]
+      "supportSubVersion": [
+        "53606",
+        "53488",
+        "53614",
+        "53621"
+      ]
     },
     {
       "packageName": "com.artdesktop.bestzip2",
@@ -126,13 +134,19 @@
       "packageName": "com.adobe.illustrator",
       "appBaseLocate": "/Applications/Adobe Illustrator 2023/Adobe Illustrator.app",
       "injectFile": "AdobeAGM.framework/Versions/A/AdobeAGM",
-      "supportVersion": ["27.5.0", "27.6.1", "27.8.1"]
+      "supportVersion": [
+        "27.5.0",
+        "27.6.1",
+        "27.8.1"
+      ]
     },
     {
       "packageName": "com.adobe.PremierePro.23",
       "appBaseLocate": "/Applications/Adobe Premiere Pro 2023/Adobe Premiere Pro 2023.app",
       "injectFile": "AdobeAGM.framework/Versions/A/AdobeAGM",
-      "supportVersion": ["23.5"]
+      "supportVersion": [
+        "23.5"
+      ]
     },
     {
       "packageName": "com.adobe.Acrobat.Pro",
@@ -149,7 +163,10 @@
       "packageName": "com.adobe.LightroomClassicCC7",
       "appBaseLocate": "/Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app",
       "injectFile": "AgUI.framework/Versions/A/AgUI",
-      "supportVersion": ["12.3", "12.4"]
+      "supportVersion": [
+        "12.3",
+        "12.4"
+      ]
     },
     {
       "packageName": [
@@ -162,13 +179,21 @@
       "deepSignApp": true,
       "entitlements": "signkeep.xml",
       "injectFile": "FluentUI.framework/Versions/A/FluentUI"
-    },{
+    },
+    {
       "packageName": "com.sublimetext.4",
       "needCopyToAppDir": true,
       "deepSignApp": true,
       "entitlements": "signkeep.xml",
       "bridgeFile": "/Contents/MacOS/",
       "injectFile": "sublime_text"
+    },{
+      "packageName": "com.sublimemerge",
+      "needCopyToAppDir": true,
+      "deepSignApp": true,
+      "entitlements": "signkeep.xml",
+      "bridgeFile": "/Contents/MacOS/",
+      "injectFile": "sublime_merge"
     },
     {
       "packageName": "com.mac.utility.screen.recorder",
@@ -185,7 +210,13 @@
       "needCopyToAppDir": true,
       "deepSignApp": true,
       "extraShell": "proxyman.sh",
-      "supportVersion": ["4.8.0", "4.8.1", "4.8.2", "4.9.0", "4.9.1"]
+      "supportVersion": [
+        "4.8.0",
+        "4.8.1",
+        "4.8.2",
+        "4.9.0",
+        "4.9.1"
+      ]
     },
     {
       "packageName": [
@@ -194,12 +225,17 @@
         "com.seriflabs.affinitypublisher2"
       ],
       "injectFile": "liblibzlib.dylib",
-      "supportVersion": ["2.1.0", "2.1.1"]
+      "supportVersion": [
+        "2.1.0",
+        "2.1.1"
+      ]
     },
     {
       "packageName": "com.panic.transmit.mas",
       "injectFile": "ZipZap.framework/Versions/A/ZipZap",
-      "supportVersion": ["5.9.2"]
+      "supportVersion": [
+        "5.9.2"
+      ]
     },
     {
       "packageName": "com.wiheads.paste",
@@ -208,7 +244,13 @@
       "injectFile": "Paste",
       "needCopyToAppDir": true,
       "deepSignApp": true,
-      "supportVersion": ["4.0.1", "4.0.2", "4.0.3", "4.0.4", "4.0.5"]
+      "supportVersion": [
+        "4.0.1",
+        "4.0.2",
+        "4.0.3",
+        "4.0.4",
+        "4.0.5"
+      ]
     },
     {
       "packageName": "cn.better365.ishot",
