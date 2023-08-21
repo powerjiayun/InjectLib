@@ -169,13 +169,14 @@ def main
 
     unless noDeep.nil?
       puts "Need Deep Sign."
-      system "#{signPrefix} --deep"
+      signPrefix = "#{signPrefix} --deep"
     end
 
     unless entitlements.nil?
       signPrefix = "#{signPrefix} --entitlements #{current}/tool/#{entitlements}"
     end
 
+    # 签名目标文件 如果加了--deep 会导致签名整个app
     if noSignTarget.nil?
       puts "开始签名..."
       system "#{signPrefix} #{dest}"
