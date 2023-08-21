@@ -100,6 +100,7 @@ def main
     disableLibraryValidate = app['disableLibraryValidate']
     entitlements = app['entitlements']
     noSignTarget = app['noSignTarget']
+    noDeep = app ['noDeep']
 
     localApp = install_apps.select { |_app| _app['CFBundleIdentifier'] == packageName }
     if localApp.empty? && (appBaseLocate.nil? || !Dir.exist?(appBaseLocate))
@@ -164,10 +165,15 @@ def main
     # puts sh
     system sh
 
-    signPrefix = "codesign -f -s - --timestamp=none --all-architectures --deep"
+    signPrefix = "codesign -f -s - --timestamp=none --all-architectures"
+
+    unless noDeep.nil?
+      puts "Need Deep Sign."
+      system "#{signPrefix} --deep"
+    end
 
     unless entitlements.nil?
-      signPrefix = "codesign -f -s - --timestamp=none --all-architectures --deep --entitlements #{current}/tool/#{entitlements}"
+      signPrefix = "#{signPrefix} --entitlements #{current}/tool/#{entitlements}"
     end
 
     if noSignTarget.nil?

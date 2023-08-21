@@ -19,6 +19,20 @@ echo "${COLOR_INFO}[*] 确保你的版本是: https://download.parallels.com/des
 
 echo "${COLOR_INFO}[*] 复制伪造的授权文件 licenses.json${NOCOLOR}"
 
+# stop prl_disp_service
+if pgrep -x "prl_disp_service" &> /dev/null; then
+  echo -e "${COLOR_INFO}[*] Stopping Parallels Desktop${NOCOLOR}"
+  pkill -9 prl_client_app &>/dev/null
+  # ensure prl_disp_service has stopped
+  "${PDFM_DIR}/Contents/MacOS/Parallels Service" service_stop &>/dev/null
+  sleep 1
+  launchctl stop /Library/LaunchDaemons/com.parallels.desktop.launchdaemon.plist &>/dev/null
+  sleep 1
+  pkill -9 prl_disp_service &>/dev/null
+  sleep 1
+  rm -f "/var/run/prl_*"
+fi
+
 if [ -f "${LICENSE_DST}" ]; then
   chflags -R 0 "${LICENSE_DST}" || {
     echo -e "${COLOR_ERR}error $? at line $LINENO.${NOCOLOR}"
