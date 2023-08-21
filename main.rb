@@ -167,7 +167,7 @@ def main
 
     signPrefix = "codesign -f -s - --timestamp=none --all-architectures"
 
-    unless noDeep.nil?
+    if noDeep.nil?
       puts "Need Deep Sign."
       signPrefix = "#{signPrefix} --deep"
     end
