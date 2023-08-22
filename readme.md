@@ -20,7 +20,7 @@
 - [兼容](#兼容)
 - [激活注意](#激活注意)
   - [Sublime Text Dev](#sublime-text-dev)
-  - [PD 18](#pd-19)
+  - [PD 19](#pd-19)
   - [Stash](#stash)
   - [ELPass](#elpass)
   - [Surge](#surge)
