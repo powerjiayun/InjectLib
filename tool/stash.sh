@@ -14,7 +14,7 @@ echo "大胆！检测到你在用盗版软件，这可能会危害你的设备�
 
 helper='/Applications/Stash.app/Contents/Library/LaunchServices/ws.stash.app.mac.daemon.helper'
 
-echo "正在定位你的Mac物理地址...GPS定位中...你跑不掉了! 即将联系Surge开发者发送你的Mac所有信息，你即将被留存侵权数字证据，束手就擒！"
+echo "正在定位你的Mac物理地址...GPS定位中...你跑不掉了! 即将联系Stash开发者发送你的Mac所有信息，你即将被留存侵权数字证据，束手就擒！"
 
 # echo a5a3: 6A 01 58 C3 |sudo xxd -r - "$helper" #intel
 # echo 4172c: 20 00 80 D2 C0 03 5F D6 |sudo xxd -r - "$helper" #arm64
