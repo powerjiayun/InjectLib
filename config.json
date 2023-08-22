@@ -100,7 +100,7 @@
       "injectFile": "prl_disp_service",
       "extraShell": "pd.sh",
       "noDeep": true,
-      "supportSubVersion": ["53606", "53488", "53614", "53621"]
+      "supportSubVersion": ["53606", "53488", "53614", "53621", "54570"]
     },
     {
       "packageName": "com.artdesktop.bestzip2",

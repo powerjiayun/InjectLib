@@ -90,7 +90,7 @@
 | Surge 5                                        | [通杀](https://dl.nssurge.com/mac/v5/Surge-5.3.1-2377-cac8e042e93f0418baf87ec6ef85dc2c.zip)           |   ✅   |   ✅   | ✅   | 年度好戏我愿称之为 《窃听风云8:赛博卧底》                                                                                                                                                          | 
 | CleanMyMac X                                   | 通杀                                                                                                  |   ✅   |   ✅   | ✅   | com.macpaw.CleanMyMac4.Menu 单独也要注入 Helper每个版本不一样还是需要单独处理 暂时不弄了 不要下大陆特供版 更新地址: https://s3-us-west-2.amazonaws.com/updateinfo.devmate.com/com.macpaw.CleanMyMac4/beta/updates.xml | 
 | Microsoft Office Word/PowerPoint/Excel/Outlook | 通杀                                                                                                  |   ✅   |   ✅   | ✅   | 365订阅版 需要从Mac AppStore 下载                                                                                                                                                       |
-| Parallels Desktop                              | [18.3.2](https://download.parallels.com/desktop/v18/18.3.2-53621/ParallelsDesktop-18.3.2-53621.dmg) |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
+| Parallels Desktop                              | [19.0.0](https://download.parallels.com/desktop/v19/19.0.0-54570/ParallelsDesktop-19.0.0-54570.dmg) |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
 | Stash                                          | [2.3.0](https://mac-release-static.stash.ws/Stash-build-221.zip)                                    |   ❌   |   ✅   | ❌   | 无法设置全局代理 不知道哪里有问题 总体体验较差 不如surge                                                                                                                                                |
 | Paste                                          | 4.0.5                                                                                               |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
 | App Cleaner & Uninstaller                      | 8.2.2                                                                                               |   ✅   |   ✅   | ✅   | 因为签名会导致提示盗版，有空在再弄。                                                                                                                                                                       | 
@@ -125,9 +125,9 @@ EA7E-8888
 88888888888888888888888888888888
 ------ END LICENSE ------
 ```
-## PD 18
+## PD 19
 
-PD18 说明与注意事项:<br>
+PD 19 说明与注意事项:<br>
 
 1. 注入后先不要打开PD, 去运行"Parallels_原始人_起洞.command", PD将会自动启动。
 2. 每次打开PD都要重复步骤1才能完美使用。步骤1执行一次之后只要PD你没有退出, 就可以直接使用PD不需要再去执行步骤1。
